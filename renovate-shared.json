@@ -10,10 +10,6 @@
       "matchPackagePatterns": ["*"]
     },
     {
-      "groupName": "all pre-commit updates",
-      "matchUpdateTypes": ["pre-commit"]
-    },
-    {
       "groupName": "Production Dependencies",
       "matchPackagePatterns": ["*"],
       "matchDepTypes": ["dependencies"]
@@ -21,7 +17,7 @@
     {
       "groupName": "Development Dependencies",
       "matchPackagePatterns": ["*"],
-      "matchDepTypes": ["devDependencies"]
+      "matchDepTypes": ["pre-commit", "devDependencies"]
     }
   ],
   "pre-commit": {
