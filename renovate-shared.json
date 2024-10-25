@@ -10,14 +10,19 @@
       "matchPackagePatterns": ["*"]
     },
     {
-      "groupName": "Production Dependencies",
+      "groupName": "npm development + production Dependencies",
       "matchPackagePatterns": ["*"],
-      "matchDepTypes": ["dependencies"]
+      "matchDepTypes": ["dependencies", "devDependencies"]
     },
     {
-      "groupName": "Development Dependencies",
+      "groupName": "TypeScript development Dependencies",
       "matchPackagePatterns": ["*"],
-      "matchDepTypes": ["pre-commit", "devDependencies"]
+      "matchPackageNames": ["/.*eslint.*/i", "typescript", "prettier", "ts-auto-mock"]
+    },
+    {
+      "groupName": "pre-commit Dependencies",
+      "matchPackagePatterns": ["*"],
+      "matchDepTypes": ["pre-commit"]
     }
   ],
   "pre-commit": {
