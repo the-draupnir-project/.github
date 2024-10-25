@@ -17,7 +17,8 @@
     {
       "groupName": "TypeScript development Dependencies",
       "matchPackagePatterns": ["*"],
-      "matchPackageNames": ["/.*eslint.*/i", "typescript", "prettier", "ts-auto-mock"]
+      "matchPackageNames": ["!/^@types.*/"],
+      "matchDepTypes": ["devDependencies"]
     },
     {
       "groupName": "pre-commit Dependencies",
