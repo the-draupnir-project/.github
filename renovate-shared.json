@@ -10,20 +10,15 @@
       "matchPackagePatterns": ["*"]
     },
     {
-      "groupName": "npm development + production Dependencies",
+      "groupName": "Production Dependencies",
       "matchPackagePatterns": ["*"],
       "matchDepTypes": ["dependencies", "devDependencies"]
     },
     {
-      "groupName": "TypeScript development Dependencies",
+      "groupName": "Development Dependencies",
       "matchPackagePatterns": ["*"],
       "matchPackageNames": ["!/^@types.*/"],
-      "matchDepTypes": ["devDependencies"]
-    },
-    {
-      "groupName": "pre-commit Dependencies",
-      "matchPackagePatterns": ["*"],
-      "matchDepTypes": ["pre-commit"]
+      "matchDepTypes": ["devDependencies", "pre-commit"]
     }
   ],
   "pre-commit": {
