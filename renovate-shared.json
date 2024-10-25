@@ -17,8 +17,8 @@
     {
       "groupName": "Development Dependencies",
       "matchPackagePatterns": ["*"],
-      "matchPackageNames": ["!/^@types.*/"],
-      "matchDepTypes": ["devDependencies", "pre-commit"]
+      "matchDepTypes": ["devDependencies", "pre-commit"],
+      "matchPackageNames": ["!/^@types.*/"]
     }
   ],
   "pre-commit": {
