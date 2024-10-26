@@ -12,12 +12,13 @@
     {
       "groupName": "Production Dependencies",
       "matchPackagePatterns": ["*"],
-      "matchDepTypes": ["dependencies"]
+      "matchDepTypes": ["dependencies", "devDependencies"]
     },
     {
       "groupName": "Development Dependencies",
       "matchPackagePatterns": ["*"],
-      "matchDepTypes": ["pre-commit", "devDependencies"]
+      "matchDepTypes": ["pre-commit", "devDependencies"],
+      "matchPackageNames": ["!/^@types.*/"]
     }
   ],
   "pre-commit": {
